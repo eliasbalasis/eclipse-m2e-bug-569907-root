@@ -22,8 +22,6 @@
 		Eclipse
 		-->
 		<version.eclipe-lifecycle-mapping.plugin>1.0.0</version.eclipe-lifecycle-mapping.plugin>
-		<net.upperlimit.root.eclipse.isrunning>false</net.upperlimit.root.eclipse.isrunning>
-		<net.upperlimit.root.eclipse.notrunning>true</net.upperlimit.root.eclipse.notrunning>
 		<!--
 		Enforcer
 		-->
@@ -164,19 +162,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>detect-eclipse</id>
-			<activation>
-				<property>
-					<name>eclipse.launcher.name</name>
-				</property>
-				<file>
-					<exists>${eclipse.launcher}</exists>
-				</file>
-			</activation>
-		</profile>
-	</profiles>
 
 </project>
